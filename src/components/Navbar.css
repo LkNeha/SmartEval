@@ -9,17 +9,17 @@
     padding-right: 1rem;
     z-index: 2;
     position: absolute;
-    color: #f8f7f7;
-    background-color: #000;
+    color: #000;
+    background-color: #d4a373;
 }
 
 .navbar-bg {
-    background-color: #720303;
+    background-color: #000;
 }
 
 .nav-menu {
     display: flex;
-    background-color: #000;
+    list-style-type: none;
    
 }
 img{
@@ -32,13 +32,18 @@ img{
 
 li{
     padding: 0 5rem;
-    color: rgb(245, 240, 240);
+    color: #582f0e;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
    
    
 }
+link{
+    text-decoration: none;
+}
 
 li:hover{
-    background-color: #958f8f;
+    background-color: #7f4f24;
     border-radius: 5rem;
   
     transition: 0.3s;

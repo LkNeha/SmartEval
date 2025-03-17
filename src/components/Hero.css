@@ -1,15 +1,312 @@
 .hero {
     width: 100%;
     height: 100vh;
-    color: #fff;
+    color: #000;
     position: relative;
+    background-color: #faedcd;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
+    
 }
+.content {
+    position: relative;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+    color: #faedcd;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+h1, h2{
+    color: #bc6c25;
+}
+
+ #video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+} 
+
+
+
+.form {
+    display: flex;
+    background-color: #ffffffcc;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 8px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form input[type=text] {
+    border: transparent;
+    background-color: transparent;
+    width: 400px;
+    font-size: 1.2rem;
+    font-family: 'Poppins',sans-serif;
+}
+
+.form input[type=text]:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 940px) {
+    .form input[type=text] {
+        max-width: 275px;
+    }
+
+}
+
+.AboutUs{
+    color: black;
+}
+
+.About_detail{
+    color: black;
+    font-family: sans-serif;
+    padding: 3rem;
+}
+
+
+.card-container{
+    width:300px;
+    height: 410px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px;
+    transition: 0.2s;
+    animation: ease-in-out;
+    padding: 0.5rem;
+    padding-bottom: 3rem;
+    margin-top: 30px;
+    margin-left: 155px;
+    row-gap: 10px;
+   background-color: rgb(123, 116, 116);
+ }
+
+ .card-body{
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    font-size: small;
+   
+ }
+
+.card{
+    display: flex;
+}
+
+ .card-container:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0px;
+ }
+
+ .image-container{
+     overflow: hidden;
+     height: 200px;
+     padding: auto;
+    
+ }
+
+ .image-container img{
+ 
+        width: 250px;
+        height: 200px;
+        padding-top: 1rem;
+        padding-left: 0rem;
+    
+ }
+ .card-title{
+    margin-bottom: 0.5rem;
+    padding-top: 2rem;
+ }
+
+.developers h1{
+    color: black;
+    padding: 5rem;
+}
+
+@media screen and (max-width:940px){
+    .card{
+       max-width: 100px ;
+       display: inline-block;
+       margin-right:900px;
+       margin-left: -80px;
+       padding-left: 1rem;
+       padding-right: 1rem;
+
+    }
+    
+ }
+
+ @media screen and (max-width:940px){
+    .team{
+        max-width: 100%;
+        display: inline-block;
+        margin-right:900px;
+        margin-left: -80px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+    .hero .team{
+        max-width: 100%;
+        display: inline-block;
+        margin-left: 1px;
+        padding-left: 5rem;
+        padding-top: 1rem;
+    
+    }
+
+    .developers .dev_details{
+        max-width: 100%;
+        font-size: medium;
+    }
+ }
+.box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    padding: 5rem;
+    background-color: rgb(17, 17, 18);
+    border-radius: 50%;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+   inset: -10px 120px;
+   background: linear-gradient(315deg,#0cdeed,#e432cf);
+   transition: 0.5s;
+   animation: animate 4s linear infinite;
+}
+ 
+.box:hover::before{
+    inset: -20px 0px;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.box::after{
+    content: "";
+    position: absolute;
+    inset: 6px;
+    background: #eee2e2;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.team{
+    display: flex;
+    padding-left: 7rem;
+    padding-block: 2rem;
+   
+}
+
+
+.box .content_sanju {
+    position: absolute;
+    height: 92%;
+    width: 92%;
+    padding: 1rem;
+    color: white;
+    inset: 4%;
+    z-index: 5;
+    border-radius: 50%;
+    border: 6px solid #af9565;
+    overflow: hidden;
+    /* background-image: url(../../assets/sanju1.jpg); */
+    background-size: cover;
+}
+
+.team_name{
+      color: #000;
+}
+
+.box .content_neha {
+    position: absolute;
+    height: 92%;
+    width: 92%;
+    padding: 1rem;
+    color: white;
+    inset: 4%;
+    z-index: 5;
+    border-radius: 50%;
+    border: 6px solid #af9565;
+    overflow: hidden;
+    /* background-image: url(../../assets/neha.jpg); */
+    background-size: cover;
+}
+.box .content_jaya {
+    position: absolute;
+    height: 92%;
+    width: 92%;
+    padding: 1rem;
+    color: white;
+    inset: 4%;
+    z-index: 5;
+    border-radius: 50%;
+    border: 6px solid #af9565;
+    overflow: hidden;
+    /* background-image: url(../../assets/jaya.jpeg); */
+    background-size: cover;
+}
+.box .content_nibha {
+    position: absolute;
+    height: 92%;
+    width: 92%;
+    padding: 1rem;
+    color: white;
+    inset: 4%;
+    z-index: 5;
+    border-radius: 50%;
+    border: 6px solid #af9565;
+    overflow: hidden;
+    /* background-image: url(../../assets/nibha.jpeg); */
+    background-size: cover;
+}
+/* .hero content img{
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    padding-left: 1rem;
+    background-repeat: no-repeat; 
+    background-position: center;
+    overflow: hidden;
+}  */

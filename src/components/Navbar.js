@@ -18,7 +18,7 @@ function Navbar() {
                 <img src={} alt=''/>
                
             </div> */}
-            <ul className="nav-menu">
+            <ul className="nav-menu" >
                 <Link to="/"><li>Home</li></Link>
                 <Link to="/teacher"><li>Teachers</li></Link>
                 <Link to="/student"><li>Students</li></Link>
@@ -27,8 +27,8 @@ function Navbar() {
             
             <div className="nav-icons">
                 
-                <BiSearch className='icon' style={{ marginRight: '1rem' }} />
-                <BsPerson className='icon' />
+                {/* <BiSearch className='icon' style={{ marginRight: '1rem' }} /> */}
+                <BsPerson className='icon' style={{ marginRight: '2rem' }}/>
             </div>
             <div className="hamburger" onClick={handleNav}>
                 {!nav ? (<HiOutlineMenuAlt4 className='icon' />) : (<AiOutlineClose style={{ color: '#000' }} className='icon' />)}
